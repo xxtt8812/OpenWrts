@@ -5,7 +5,8 @@
 sed -i '/^#src-git luci https:\/\/github.com\/coolsnowwolf\/luci$/s/^#//' feeds.conf.default && sed -i '/^src-git luci https:\/\/github.com\/coolsnowwolf\/luci\.git;openwrt-23\.05$/s/^/#/' feeds.conf.default
 
 # 修改默认IP为192.168.0.20
-sed -i 's/192.168.1.1/192.168.0.20/g' package/base-files/files/bin/config_generate 
+sed -i 's/192.168.1.1/192.168.0.20/g' package/base-files/files/bin/config_generate
+sed -i 's/LEDE/OpenWrt/g' package/base-files/files/bin/config_generate
 
 # luci-theme-infinityfreedom
 echo 'src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' >>feeds.conf.default
