@@ -26,7 +26,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-
+      
+    - name: Clone Custom Package
+      run: |
+        git clone https://github.com/JSZMonkey/luci-app-control-webrestriction.git package/luci-app-control-webrestriction
+        chmod +x package/luci-app-control-webrestriction/files/etc/init.d/webrestriction
+        
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
