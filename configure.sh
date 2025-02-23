@@ -11,6 +11,9 @@ sed -i 's/LEDE/OpenWrt/g' package/base-files/files/bin/config_generate
 # luci-theme-infinityfreedom
 echo 'src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' >>feeds.conf.default
 
+# luci-theme-infinityfreedom
+echo 'src-git webrestriction https://github.com/JSZMonkey/luci-app-control-webrestriction.git ' >>feeds.conf.default
+
 
 # 替换默认主题
 rm -rf package/lean/luci-theme-argon 
