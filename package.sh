@@ -15,6 +15,3 @@ git clone --depth 1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git pac
 
 # OpenClash
 git clone --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
-
-# webrestriction
-git clone --depth 1 https://github.com/JSZMonkey/luci-app-control-webrestriction.git package/luci-app-control-webrestriction
