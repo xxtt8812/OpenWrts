@@ -15,3 +15,6 @@ git clone --depth 1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git pac
 
 # OpenClash
 git clone --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+
+# netguard
+git clone --depth 1 https://github.com/xxtt8812/luci-app-netguard.git
